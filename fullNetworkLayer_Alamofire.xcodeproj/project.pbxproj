@@ -14,6 +14,8 @@
 		C946C0292A5AA9FB0056B506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C946C0272A5AA9FB0056B506 /* Main.storyboard */; };
 		C946C02B2A5AA9FC0056B506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C946C02A2A5AA9FC0056B506 /* Assets.xcassets */; };
 		C946C02E2A5AA9FC0056B506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C946C02C2A5AA9FC0056B506 /* LaunchScreen.storyboard */; };
+		C946C0382A5ACD230056B506 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0372A5ACD230056B506 /* TargetType.swift */; };
+		C946C03A2A5AD1190056B506 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0392A5AD1190056B506 /* BaseAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C946C02A2A5AA9FC0056B506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C946C02D2A5AA9FC0056B506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C946C02F2A5AA9FC0056B506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C946C0372A5ACD230056B506 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		C946C0392A5AD1190056B506 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				13218991600D7BD21E40F33D /* Pods-fullNetworkLayer_Alamofire.debug.xcconfig */,
 				58CBA3965D2E57F5B65D3F6E /* Pods-fullNetworkLayer_Alamofire.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,7 @@
 		C946C0202A5AA9FB0056B506 /* fullNetworkLayer_Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				C946C0352A5ACCF30056B506 /* Networking */,
 				C946C0212A5AA9FB0056B506 /* AppDelegate.swift */,
 				C946C0232A5AA9FB0056B506 /* SceneDelegate.swift */,
 				C946C0252A5AA9FB0056B506 /* ViewController.swift */,
@@ -90,6 +94,23 @@
 				C946C02F2A5AA9FC0056B506 /* Info.plist */,
 			);
 			path = fullNetworkLayer_Alamofire;
+			sourceTree = "<group>";
+		};
+		C946C0352A5ACCF30056B506 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C946C0362A5ACD040056B506 /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C946C0362A5ACD040056B506 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C946C0372A5ACD230056B506 /* TargetType.swift */,
+				C946C0392A5AD1190056B506 /* BaseAPI.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C946C0382A5ACD230056B506 /* TargetType.swift in Sources */,
 				C946C0262A5AA9FB0056B506 /* ViewController.swift in Sources */,
 				C946C0222A5AA9FB0056B506 /* AppDelegate.swift in Sources */,
 				C946C0242A5AA9FB0056B506 /* SceneDelegate.swift in Sources */,
+				C946C03A2A5AD1190056B506 /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
