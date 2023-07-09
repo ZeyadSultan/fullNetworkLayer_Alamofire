@@ -16,6 +16,10 @@
 		C946C02E2A5AA9FC0056B506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C946C02C2A5AA9FC0056B506 /* LaunchScreen.storyboard */; };
 		C946C0382A5ACD230056B506 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0372A5ACD230056B506 /* TargetType.swift */; };
 		C946C03A2A5AD1190056B506 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0392A5AD1190056B506 /* BaseAPI.swift */; };
+		C946C03F2A5AE33A0056B506 /* UsersNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C03E2A5AE33A0056B506 /* UsersNetworking.swift */; };
+		C946C0412A5AF79D0056B506 /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0402A5AF79D0056B506 /* UsersAPI.swift */; };
+		C946C0462A5AF8640056B506 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0452A5AF8640056B506 /* UserModel.swift */; };
+		C946C0482A5AFABA0056B506 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C0472A5AFABA0056B506 /* UsersResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		C946C02F2A5AA9FC0056B506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C946C0372A5ACD230056B506 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		C946C0392A5AD1190056B506 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		C946C03E2A5AE33A0056B506 /* UsersNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworking.swift; sourceTree = "<group>"; };
+		C946C0402A5AF79D0056B506 /* UsersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
+		C946C0452A5AF8640056B506 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C946C0472A5AFABA0056B506 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		C946C0202A5AA9FB0056B506 /* fullNetworkLayer_Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				C946C0442A5AF8540056B506 /* Models */,
 				C946C0352A5ACCF30056B506 /* Networking */,
 				C946C0212A5AA9FB0056B506 /* AppDelegate.swift */,
 				C946C0232A5AA9FB0056B506 /* SceneDelegate.swift */,
@@ -99,6 +108,7 @@
 		C946C0352A5ACCF30056B506 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C946C03D2A5AE31F0056B506 /* Users */,
 				C946C0362A5ACD040056B506 /* Base */,
 			);
 			path = Networking;
@@ -111,6 +121,24 @@
 				C946C0392A5AD1190056B506 /* BaseAPI.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		C946C03D2A5AE31F0056B506 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				C946C03E2A5AE33A0056B506 /* UsersNetworking.swift */,
+				C946C0402A5AF79D0056B506 /* UsersAPI.swift */,
+				C946C0472A5AFABA0056B506 /* UsersResponse.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		C946C0442A5AF8540056B506 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C946C0452A5AF8640056B506 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +258,13 @@
 			files = (
 				C946C0382A5ACD230056B506 /* TargetType.swift in Sources */,
 				C946C0262A5AA9FB0056B506 /* ViewController.swift in Sources */,
+				C946C0462A5AF8640056B506 /* UserModel.swift in Sources */,
 				C946C0222A5AA9FB0056B506 /* AppDelegate.swift in Sources */,
 				C946C0242A5AA9FB0056B506 /* SceneDelegate.swift in Sources */,
+				C946C0482A5AFABA0056B506 /* UsersResponse.swift in Sources */,
+				C946C03F2A5AE33A0056B506 /* UsersNetworking.swift in Sources */,
 				C946C03A2A5AD1190056B506 /* BaseAPI.swift in Sources */,
+				C946C0412A5AF79D0056B506 /* UsersAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
